@@ -19,43 +19,80 @@ main {
 }
 
 nav {
-  width: 100%;
-  max-width: 832px;
-  max-height: 430px;
-  margin-left: calc(50% - 400px);
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.296875) 0 6px 5px;
   border-radius: 5px;
   margin-top: 83px;
-  background-color: transparent;
+  height: 36px;
+  z-index: 2;
+  background: linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
 }
 
 .nav_bar {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(to bottom, rgb(119, 124, 120) 5%, rgb(105, 105, 105) 11%, rgb(100, 100, 100) 50%, rgb(82, 82, 82));
   list-style: none;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-left: 1px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
+  height: 36px;
+  padding-left: 0;
 }
 
 .nav_links {
+  display: flex;
+  flex: 1;
   color: white;
   text-decoration: none;
-  border-left: 0.5px solid gray;
   text-align: center;
   margin: auto;
   font-family: sans-serif;
-  font-size: 0.8rem;
-}
-
-.nav_links .fa-apple {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  border-width: 0 0.1rem;
+  border-style: outset;
+  border-color: dimgray;
+  cursor: pointer;
+  height: 36px;
 }
 
 .nav_bar li {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-width: 0 0.01rem;
+  border-color: dimgray;
+  border-style: outset;
+  flex: 1;
+  text-align: center;
+  margin: auto;
+  border-left: 1px;
+}
+
+.nav_bar:first-child {
+  border-left: none;
+  font-size: medium;
+}
+
+.nav_bar:last-child {
+  border-right: none;
+}
+
+.nav_bar:last-child:hover {
+  background: linear-gradient(rgb(114, 114, 114), rgb(148, 147, 147) 50%, rgb(88, 88, 88) 45%);
+}
+
+.sprite_container a {
+  margin: 10px;
+}
+
+.nav_bar a:hover {
+  background: linear-gradient(rgb(63, 63, 63), rgb(148, 147, 147) 50%, rgb(51, 51, 51) 45%);
 }
 
 .fab {
@@ -64,15 +101,33 @@ nav {
   color: white;
 }
 
-input[type=text] {
-  border-radius: 15px;
+.fa-search {
+  position: absolute;
+  top: 1px;
+  left: 22px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#input {
+  border-radius: 30px;
+  border: 1px solid gray;
   outline: none;
+  width: 132px;
+  padding-left: 10px;
+  border-style: inset;
+  margin-right: 13px;
+  margin-left: 18px;
+}
+
+input[type=text] {
   background: transparent;
-  box-shadow: 0 -2px rgb(70, 70, 70);
+  box-shadow: 0 -2px rgb(19, 18, 18);
 }
 
 .search_bar {
   position: relative;
+  margin-left: -18px;
 }
 
 .input_search {
@@ -80,6 +135,7 @@ input[type=text] {
   top: 3px;
   right: 90px;
   font-size: 1.2rem;
+  padding-left: 21px;
 }
 
 .sprite_container {
@@ -88,10 +144,6 @@ input[type=text] {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-}
-
-.sprite_container a {
-  margin: 10px;
 }
 
 .what_will {
