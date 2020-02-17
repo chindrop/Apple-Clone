@@ -179,6 +179,26 @@ input[type=text] {
   width: 100%;
 }
 
+.apple4 {
+  background-image: url(images/apple4.jpg);
+  width: 100%;
+}
+
+.apple3 {
+  background-image: url(images/apple3.jpg);
+  width: 100%;
+}
+
+.apple2 {
+  background-image: url(images/apple2.jpg);
+  width: 100%;
+}
+
+.apple5 {
+  background-image: url(images/apple5.jpg);
+  width: 100%;
+}
+
 .flag {
   height: 16px;
   width: 16px;
